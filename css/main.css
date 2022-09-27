@@ -3,3 +3,288 @@
 h1 {
     display: none;
 }
+
+.visual {
+    position: relative;
+    color: #fff;
+}
+.visual .inner {
+    position: relative;
+    z-index: 2;
+}
+.visual .dp .inner::after {
+    position: absolute;
+    top: 234px;
+    right: 58px;
+    width: 370px;
+    height: 1px;
+    background-color: #B70002;
+    content: "";
+}
+.visual .rs .inner::after {
+    position: absolute;
+    top: 234px;
+    right: 75px;
+    width: 370px;
+    height: 1px;
+    background-color: #fff;
+    content: "";
+}
+.visual h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.visual h2 span {
+    font-weight: 700;    
+}
+.visual p {
+    margin-top: 15px;
+}
+.visual .dp .inner {
+    float: right;
+    top: 0;
+    right: 50%;
+    margin: 329px 0 171px 0;
+    padding: 61px 60px 118px 130px;
+    background-color: rgba(2,54,101,0.9);
+    text-align: right;
+}
+.visual .rs .inner {
+    float: left;
+    top: 0;
+    left: 50%;
+    margin: 171px 0 329px 0;
+    padding: 61px 91px 118px 60px;
+    background-color: rgba(183,0,2,0.9);
+}
+.visual img {
+    position: absolute;
+    z-index: 1;
+    width: 960px;
+    height: 800px;
+}
+.visual .dp img.pc {
+    right: 50%;
+}
+.visual .dp img.mobile {
+    display: none;
+}
+.visual .rs img {
+    left: 50%;
+}
+@media screen and (max-width:640px) {
+    .visual h2 {
+        font-size: 18px;
+    }
+    .visual .inner {
+        position: absolute;
+    }
+    .visual .dp .inner::after {
+        top: 81px;
+        right: 79px;
+        width: 160px;
+        height: 1px;
+        background-color: #fff;
+    }
+    .visual .rs .inner::after {
+        top: 81px;
+        right: 92px;
+        width: 160px;
+        height: 1px;
+    }
+    .visual p {
+        display: none;
+    }
+    .visual .dp .inner {
+        float: none;
+        top: auto;
+        right: auto;
+        margin: 65px 20px 71px 20px;
+        padding: 26px 81px 35px 81px;
+        background-color: rgba(183,0,2,0.9);
+        text-align: center;
+    }
+    .visual .rs .inner {
+        float: none;
+        top: auto;
+        left: auto;
+        margin: 65px 20px 71px 20px;
+        padding: 26px 81px 35px 81px;
+        background-color: rgba(2,54,101,0.9);
+        text-align: center;
+    }
+    .visual img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+    .visual .dp img.pc {
+        display: none;
+    }
+    .visual .dp img.mobile {
+        display: block;
+        height: 240px;
+    }
+    .visual .rs img {
+        left: auto;
+        height: 241px;
+    }
+}
+
+.social {
+    width: 100%;
+    height: 800px;
+    background: url(../images/social_bg.png) no-repeat center center/ cover;
+    color: #fff;
+    text-align: center;
+}
+.social h2 {
+    padding: 209px 0 5px 0;
+    font-size: 50px;
+}
+.social h2 strong {
+    position: relative;
+    display: block;
+    padding-bottom: 12px;
+    font-size: 15px;
+}
+.social h2 strong::after {
+    position: absolute;
+    top: -7px;
+    left: 607px;
+    width: 56px;
+    height: 1px;
+    background-color: #fff;
+    content: "";
+}
+.social p span {
+    display: block;
+}
+.social ul {
+    display: flex;
+    margin: 70px 0 0 0;
+    justify-content: space-evenly;
+}
+.social ul li i {
+    font-size: 50px;
+}
+.social ul li span {
+    display: block;
+    margin-top: 8px;
+    font-size: 17px;
+}
+@media screen and (max-width:640px) {
+    .social {
+        width: 100%;
+        height: auto;
+        background: url(../images/social_bg.png) no-repeat center center/ cover;
+        color: #fff;
+        text-align: center;
+    }
+    .social h2 {
+        padding: 71px 0 6px 0;
+        font-size: 25px;
+    }
+    .social h2 strong {
+        position: relative;
+        display: block;
+        padding-bottom: 9px;
+        font-size: 13px;
+    }
+    .social h2 strong::after {
+        top: -3px;
+        left: 156px;
+        width: 48px;
+    }
+    .social p {
+        font-size: 15px;
+    }
+    .social p span {
+        display: inline;
+    }
+    .social ul {
+        display: flex;
+        margin: 0;
+        padding: 53px 0 88px 0;
+        justify-content: space-evenly;
+    }
+    .social ul li i {
+        font-size: 30px;
+    }
+    .social ul li span {
+        display: block;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+}
+
+.talent {
+    width: 100%;
+    height: 800px;
+    background: url(../images/talent_bg.png) no-repeat center center/ cover;
+    color: #fff;
+}
+.talent h2 {
+    padding: 138px 0 6px 0;
+    text-align: center;
+    font-size: 50px;
+}
+.talent h2 strong {
+    position: relative;
+    display: block;
+    padding-bottom: 11px;
+    font-size: 15px;
+}
+.talent .txt {
+    text-align: center;
+}
+.talent h2 strong::after {
+    position: absolute;
+    top: -7px;
+    left: 612px;
+    width: 56px;
+    height: 1px;
+    background-color: #fff;
+    content: "";
+}
+.talent ul {
+    margin: 83px 0 0 0;
+}
+.talent ul li {
+    float: left;
+}
+.talent ul li .more {
+    padding-top: 56px;
+}
+.talent ul li .more i {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.talent ul li.employment {
+    background: url(../images/employment_bg.png) no-repeat center center/ cover;
+    padding: 51px 267px 60px 50px;
+    margin-right: 40px;
+}
+.talent ul li.employment h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.talent ul li.human,
+.talent ul li.greeting {
+    margin-right: 20px;
+}
+.talent ul li.human,
+.talent ul li.greeting,
+.talent ul li.job {
+    padding: 51px 65px 60px 30px;
+    background-color: #fff;
+    color: #3d3d3d;
+}
+.talent ul li.human h3,
+.talent ul li.greeting h3,
+.talent ul li.job h3 {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
